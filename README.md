@@ -6,7 +6,7 @@ Welcome to the Black Wolf Agency website project. This project showcases the web
 
 ![preview](public/preview.png)
 
-## Getting Started.
+## Getting Started
 
 ### Prerequisites
 
