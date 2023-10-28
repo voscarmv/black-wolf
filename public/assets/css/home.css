@@ -1,0 +1,47 @@
+.initial-text {
+  font-size: 3rem;
+}
+
+.image-text .text {
+  font-size: 1rem;
+}
+
+.language-buttons {
+  font-size: 2.68rem;
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem;
+}
+
+.language-buttons a {
+  display: inline-block;
+  padding: .25rem 1rem;
+  margin: 0 .25rem;
+  background-color: var(--card-hover-background);
+  border-radius: 25px;
+}
+
+.language-buttons a:hover {
+  text-decoration: underline;
+  /* Pill shape with full radius */
+  background-color: var(--card-hover-background);
+  /* Background color on hover */
+}
+
+@media screen and (min-width: 768px) {
+  .initial-text {
+    font-size: 4rem;
+  }
+
+  .image-text .text {
+    font-size: 1.125rem;
+    margin-top: 10px;
+    flex: 1;
+  }
+
+  .language-buttons a {
+    background-color: var(--card-background);
+    padding: .5rem 3rem;
+    text-decoration: none;
+  }
+}

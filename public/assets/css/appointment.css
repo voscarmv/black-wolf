@@ -1,0 +1,51 @@
+@import url(icons.css);
+
+.schedule-button {
+  background-color: var(--positive-action-color);
+  /* Background color */
+  color: var(--text-color);
+  /* Text color */
+  border: none;
+  border-radius: 25px;
+  /* Pill shape */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  cursor: pointer;
+  max-width: 28rem;
+}
+
+.schedule-button i {
+  margin-right: 5px;
+  /* Space between the icon and text */
+}
+
+.schedule-button:hover {
+  background-color: var(--link-hover-color);
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: var(--text-color);
+}
+
+.social-media-links a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+@media screen and (min-width: 768) {
+  .title {
+    font-size: 3.25rem;
+    margin-top: 10px;
+    flex: 1;
+  }
+
+  .social-media-links a {
+    font-size: 1.125rem;
+  }
+}

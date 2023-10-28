@@ -1,0 +1,23 @@
+{
+  "cSpell.language": "en, es, fullstack",
+  "cSpell.allowCompoundWords": true,
+  "cSpell.languageSettings": [
+    {
+      "languageId": "*",
+      "dictionaries": [
+        "fullstack"
+      ]
+    }
+  ],
+  "cSpell.userWords": [],
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "editor.cursorBlinking": "smooth",
+  "files.trimFinalNewlines": true,
+  "cSpell.words": [
+    "Isotipo",
+    "practicidad",
+    "prospectos"
+  ],
+}

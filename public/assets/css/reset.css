@@ -1,0 +1,26 @@
+/* Reset CSS */
+
+/* Remove default margin and padding on all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove list styles (bullet points) from lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default styles on anchor links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Set the base font size and family for the entire page */
+html {
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}

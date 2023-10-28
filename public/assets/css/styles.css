@@ -1,0 +1,134 @@
+@import url(reset.css);
+@import url(animations.css);
+@import url(footer.css);
+
+@font-face {
+  font-family: "Clear Sans";
+  src: url("../fonts/clear-sans/ClearSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+:root {
+  /* Primary Colors */
+  --background-color: #000;
+  /* Black */
+  --text-color: #fff;
+  /* White */
+  --positive-action-color: #007bff;
+  /* Celeste (Sky Blue) */
+  --alternative-action-color: #666;
+  /* Grey */
+
+  /* Text and Typography */
+  --link-color: var(--positive-action-color);
+  --link-hover-color: #00a2ff;
+  /* Lighter blue on link hover */
+  --visited-link-color: #9933cc;
+  /* Purple for visited links */
+  --text-heading-color: #fff;
+  --text-subheading-color: #999;
+  /* Light grey for subheadings */
+  --text-placeholder-color: #ccc;
+  /* Light grey for placeholders */
+
+  /* Borders and Dividers */
+  --border-color: #444;
+  /* Dark grey for borders */
+  --divider-color: #666;
+  /* Slightly lighter grey for dividers */
+
+  /* Shadows */
+  --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* Box shadow for cards */
+
+  /* Backgrounds and Cards */
+  --card-background: #111;
+  /* Dark background for cards */
+  --card-hover-background: #222;
+  /* Slightly lighter background on card hover */
+  --footer-background: #333;
+
+  /* Active Link */
+  --active-link-color: gray;
+  /* Color for active links (footer) */
+}
+
+body {
+  font-family: "Clear Sans", Arial, sans-serif;
+  animation: gradientMove 5s linear infinite;
+  background-color: var(--background-color);
+  background: linear-gradient(45deg,
+      var(--background-color),
+      var(--card-background));
+  background-size: 200% 200%;
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+  flex-wrap: wrap;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.full-width {
+  max-width: 1024px;
+  width: 100%;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.image-text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image-text .text, p {
+  font-size: 1.125rem;
+}
+
+.image {
+  width: 100%;
+  max-width: 221px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--text-heading-color);
+  text-align: center;
+  width: 100%;
+}
+
+/* For tablet and above */
+@media screen and (min-width: 768px) {
+  .image-text {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .image-text .text, p {
+    font-size: 16px;
+    max-width: 40rem;
+  }
+}
+
+/* Media Query to Disable Animation for Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
+}

@@ -1,0 +1,38 @@
+.card {
+  width: 100%;
+  border: var(--border-color);
+  background: var(--card-background);
+  color: var(--text-subheading-color);
+  border-radius: 25px;
+  box-shadow: var(--box-shadow);
+  transition: background 0.3s, color 0.3s;
+  padding: 20px;
+  /* Add margin for the gap */
+  display: inline-grid;
+  margin: 1rem 0;
+  box-sizing: border-box;
+  /* Include padding and border in the width calculation */
+}
+
+.card h2 {
+  color: var(--text-subheading-color);
+}
+
+.card p {
+  color: var(--text-placeholder-color);
+}
+
+
+@media screen and (min-width: 768px) {
+  .card {
+    height: 12rem;
+    width: calc(50% - 3rem);
+    background: var(--card-background);
+    margin: 1rem;
+  }
+  
+  .card:hover {
+    background: var(--card-hover-background);
+    color: var(--text-color);
+  }
+}
